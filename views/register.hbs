@@ -1,0 +1,47 @@
+
+<h3 class="text-center my-5 text-success">Account Registration</h3>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-10 col-lg-8 col-xl-5">
+      <div class="border p-3 rounded bg-light">
+        <form method="post">
+          <div class="form-group">
+            <label for="name">Phòng/Khoa</label>
+            <div class="input-group mb-3">
+              <input id="name" type="text" class="form-control" placeholder="Phòng/Khoa" name="name">
+            </div>
+          <div class="form-group">
+            <label for="username">Username</label>
+            <div class="input-group mb-3">
+              <input id="username" type="text" class="form-control" placeholder="Username" name="username">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <div class="input-group mb-3">
+              <input type="password" class="form-control" placeholder="Password" name="password">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="password">Confirm Password</label>
+            <div class="input-group mb-3">
+              <input type="password" class="form-control" placeholder="Password" name="password2">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="topic">Chuyên mục</label>
+            <div class="input-group mb-3 autocomplete">
+              <input id="topic" type="text" name="topic" placeholder="Chuyên mục" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-success px-5" type="submit">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  autocomplete(document.getElementById("topic"), topic);
+</script>
